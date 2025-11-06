@@ -1,0 +1,36 @@
+{
+  "name": "profile_service",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "Emeh Stanley Chinemerem",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.890.0",
+    "@aws-sdk/s3-request-presigner": "^3.890.0",
+    "amqplib": "^0.10.9",
+    "axios": "^1.12.2",
+    "axios-retry": "^4.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "mysql2": "^3.14.4",
+    "opossum": "^9.0.0",
+    "redis": "^5.8.3",
+    "sequelize": "^6.37.7",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  }
+}
