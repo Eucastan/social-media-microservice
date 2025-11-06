@@ -55,7 +55,7 @@ export const Login = async (req, res) => {
         const isValid = await bcrypt.compare(password, user.password);
         if(!isValid) return res.status(401).json("Invalid credential");
 
-        const token = SignToken({id: user.id, username: user.username});
+        const token = SignToken({id: user.id});
         res.cookie("token", token, {
             httpOnly: true,
             maxAge: Number(process.env.COOKIE_EXPIRES_IN),
